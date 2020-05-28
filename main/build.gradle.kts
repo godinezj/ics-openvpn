@@ -32,6 +32,7 @@ dependencies {
     implementation ("com.android.support:recyclerview-v7:28.0.0")
     implementation ("com.github.PhilJay:MPAndroidChart:v3.0.2")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.11")
+    implementation ("com.android.volley:volley:1.1.1")
 
     testImplementation ("junit:junit:4.12")
     testImplementation ("org.mockito:mockito-core:2.16.0")

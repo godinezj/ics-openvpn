@@ -26,6 +26,7 @@ import de.blinkt.openvpn.fragments.GeneralSettings;
 import de.blinkt.openvpn.fragments.GraphFragment;
 import de.blinkt.openvpn.fragments.LogFragment;
 import de.blinkt.openvpn.fragments.SendDumpFragment;
+import de.blinkt.openvpn.fragments.SignInFragment;
 import de.blinkt.openvpn.fragments.VPNProfileList;
 import de.blinkt.openvpn.views.ScreenSlidePagerAdapter;
 import de.blinkt.openvpn.views.SlidingTabLayout;
@@ -53,6 +54,8 @@ public class MainActivity extends BaseActivity {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             disableToolbarElevation();
         }
+
+        mPagerAdapter.addTab(R.string.sign_in_fragment, SignInFragment.class);
 
 
         mPagerAdapter.addTab(R.string.vpn_list_title, VPNProfileList.class);
